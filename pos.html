@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Point of Sales - Kopi Panggang</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="#" class="w-6" src="dist/images/logo.svg">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="/pos.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Point of Sales </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/produk.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="menu__title"> Produk </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/penjualan.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="trello"></i> </div>
+                        <div class="menu__title"> Data Penjualan </div>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="/stok-opname.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="edit"></i> </div>
+                        <div class="menu__title"> Stok Opname </div>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="/customer.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="users"></i> </div>
+                        <div class="menu__title"> Customer / Driver </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="menu">
+                        <div class="menu__icon"> <i data-feather="toggle-right"></i> </div>
+                        <div class="menu__title"> Log Out </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="#" class="w-6" src="dist/images/logo.svg">
+                    <span class="hidden xl:block text-white text-lg ml-3"> RESTO<span class="font-medium"> Kopi Panggang</span> </span>
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+                        <a href="/pos.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Point of Sales </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/produk.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="box"></i> </div>
+                            <div class="side-menu__title"> Produk </div>
+                        </a>
+    
+                    </li>
+                    <li>
+                        <a href="/penjualan.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="trello"></i> </div>
+                            <div class="side-menu__title"> Data Penjualan </div>
+                        </a>
+    
+                    </li>
+    
+                    <li>
+                        <a href="/stok-opname.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="edit"></i> </div>
+                            <div class="side-menu__title"> Stok Opname </div>
+                        </a>
+    
+                    </li>
+    
+                    <li>
+                        <a href="/customer.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                            <div class="side-menu__title"> Customer </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/driver.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                            <div class="side-menu__title"> Driver </div>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="toggle-right"></i> </div>
+                            <div class="side-menu__title"> Log Out </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <div id="" class="relative flex items-center py-1"> 
+                        <div class="w-12 h-12 image-fit"> <img alt="#" class="rounded-full" src="dist/images/profile-13.jpg"> </div> 
+                            <div class="ml-4 mr-auto"> 
+                                <div class="font-medium leading-relaxed">Nama Operator</div> 
+                                <div class="text-gray-600">Jabatan</div> 
+                            </div> 
+                    </div> 
+                </div>
+                <!-- END: Top Bar -->
+                <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+                    <h2 class="text-lg font-medium mr-auto">
+                        Point of Sale
+                    </h2>
+                    <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
+                        <a href="javascript:;" data-toggle="modal" data-target="#new-order-modal" class="button text-white bg-theme-1 shadow-md mr-2">New Order</a> 
+                        <div class="pos-dropdown dropdown relative ml-auto sm:ml-0">
+                            <button class="dropdown-toggle button px-2 box text-gray-700">
+                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-feather="chevron-down"></i> </span>
+                            </button>
+                            <div class="pos-dropdown__dropdown-box dropdown-box mt-10 absolute top-0 right-0 z-20">
+                                <div class="dropdown-box__content box p-2">
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nota Belum Dibayar</span> </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nama Customer</span> </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Tampilkan Nota hari ini saja</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pos intro-y grid grid-cols-12 gap-5 mt-5">
+                    <!-- BEGIN: Item List -->
+                    <div class="intro-y col-span-12 lg:col-span-8">
+                        <div class="lg:flex intro-y">
+                            <div class="relative text-gray-700">
+                                <input type="text" class="input input--lg w-full lg:w-64 box pr-10 placeholder-theme-13" placeholder="Search item...">
+                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-feather="search"></i> 
+                            </div>
+                            <select class="input input--lg box w-full lg:w-auto mt-3 lg:mt-0 ml-auto">
+                                <option>Sortir menurut A-Z</option>
+                                <option>A to Z</option>
+                                <option>Z to A</option>
+                                <option>Lowest Price</option>
+                                <option>Highest Price</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 mt-5">
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Makanan</div>
+                                <div class="text-gray-600">5 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box bg-theme-1 p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base text-white">Minuman</div>
+                                <div class="text-theme-25">8 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Snack</div>
+                                <div class="text-gray-600">4 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Kopi</div>
+                                <div class="text-gray-600">3 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Gorengan</div>
+                                <div class="text-gray-600">8 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Deserts</div>
+                                <div class="text-gray-600">8 Items</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5 cursor-pointer zoom-in">
+                                <div class="font-medium text-base">Beverage</div>
+                                <div class="text-gray-600">9 Items</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 mt-5 pt-5 border-t border-theme-5">
+                            <a href="javascript:;" class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-9.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Teh Manis</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-2.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Kopi Hitam</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Susu Jahe</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-6.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Wedang Jahe</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Cappucino</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Es Jeruk</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Lemon Tea</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"  class="intro-y block col-span-6 sm:col-span-3 xxl:col-span-3">
+                                <div class="box rounded-md p-3 relative zoom-in">
+                                    <div class="flex-none pos-image relative block">
+                                        <div class="pos-image__preview image-fit">
+                                            <img alt="#" src="dist/images/food-beverage-1.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="block font-medium text-center truncate mt-3">Vanilla Latte</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END: Item List -->
+                    <!-- BEGIN: Ticket -->
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="intro-y pr-1">
+                            <div class="box p-2">
+                                <div class="pos__tabs nav-tabs justify-center flex"> <a data-toggle="tab" data-target="#ticket" href="javascript:;" class="flex-1 py-2 rounded-md text-center active">Pembelian</a> <a data-toggle="tab" data-target="#details" href="javascript:;" class="flex-1 py-2 rounded-md text-center">Details</a> </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content__pane active" id="ticket">
+                                <div class="pos__ticket box p-5 mt-5">
+                                        <div class="hasil-pick-item-1">  
+                                            <div class="flex items-center bg-white">
+                                                <div class="flex mr-1">Es Jeruk</div>
+                                                <div class="text-gray-600">@ 5.000</div>
+                                                <div class="ml-auto">15.000</div>
+                                            </div>
+                                            <div class="flex mt-1 flex-1">
+                                                    <button type="button" class="button w-12 border bg-red-200 text-black-800 mr-1">-</button>
+                                                    <input type="text" class="input w-full border text-center" placeholder="Item quantity" value="3">
+                                                    <button type="button" class="button w-12 border bg-green-200 text-black-800 ml-1">+</button>
+                                            </div>
+                                            <div class="w-full border-t border-gray-200 mt-2"></div>
+                                        </div>
+                                        <div class="hasil-pick-item-2">  
+                                            <div class="flex items-center bg-white mt-3">
+                                                <div class="flex mr-1">Nasi Merah</div>
+                                                <div class="text-gray-600">@ 5.000</div>
+                                                <div class="ml-auto">15.000</div>
+                                            </div>
+                                            <div class="flex mt-1 flex-1">
+                                                    <button type="button" class="button w-12 border bg-red-200 text-black-800 mr-1">-</button>
+                                                    <input type="text" class="input w-full border text-center" placeholder="Item quantity" value="3">
+                                                    <button type="button" class="button w-12 border bg-green-200 text-black-800 ml-1">+</button>
+                                            </div>
+                                            <div class="w-full border-t border-gray-200 mt-2"></div>
+                                        </div>
+                                </div>
+                                
+
+                                <div class="box p-5 mt-2">
+                                    <div class="flex">
+                                        <div class="mr-auto">Subtotal</div>
+                                        <div>30.000</div>
+                                    </div>
+                                    <div class="flex mt-4">
+                                        <div class="mr-auto">PPN 11%</div>
+                                        <div>3.300</div>
+                                    </div>
+                                    <div class="flex mt-4 pt-4 border-t border-gray-200">
+                                        <div class="mr-auto font-medium text-base">Total</div>
+                                        <div class="font-medium text-base">33.300</div>
+                                    </div>
+                                </div>
+                                <div class="relative mt-2">
+                                    <div class="absolute rounded-l w-15 h-full pl-5 pr-5 flex items-center justify-center bg-green-100 border text-grey-700">CASH</div> <input type="text" class="input pl-24 w-full border col-span-4" placeholder="typing input, otomatis berubah">
+                                </div> 
+                                <div class="box p-5 mt-2">
+                                    <div class="flex">
+                                        <div class="mr-auto">CASH</div>
+                                        <div>50.000</div>
+                                    </div>
+                                    
+                                    <div class="flex mt-4 pt-4 border-t border-gray-200">
+                                        <div class="mr-auto font-medium text-base">Kembali</div>
+                                        <div class="font-medium text-base">16.700</div>
+                                    </div>
+                                </div>
+                                <div class="flex mt-5">
+                                    <button class="button w-32 text-white bg-theme-11 shadow-md">Simpan<br>Belum Bayar</button>
+                                    <button class="button w-32 text-white bg-theme-1 shadow-md ml-auto">Bayar<br>Print Nota</button>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-content__pane" id="details">
+                                <div class="box p-5 mt-5">
+                                    <div class="flex items-center border-b pb-5">
+                                        <div class="">
+                                            <div class="text-gray-600">Time</div>
+                                            <div>02/06/20 02:10 PM</div>
+                                        </div>
+                                        <i data-feather="clock" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                    </div>
+                                    <div class="flex items-center border-b py-5">
+                                        <div class="">
+                                            <div class="text-gray-600">Customer</div>
+                                            <div>Keanu Reeves</div>
+                                        </div>
+                                        <i data-feather="user" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                    </div>
+                                    <div class="flex items-center border-b py-5">
+                                        <div class="">
+                                            <div class="text-gray-600">Rombongan / Driver</div>
+                                            <div>Nama Rombongan / Nama Driver</div>
+                                        </div>
+                                        <i data-feather="users" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                    </div>
+                                    <div class="flex items-center pt-5">
+                                        <div class="">
+                                            <div class="text-gray-600">Table</div>
+                                            <div>21</div>
+                                        </div>
+                                        <i data-feather="mic" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Ticket -->
+                </div>
+                <!-- BEGIN: New Order Modal -->
+                <div class="modal" id="new-order-modal">
+                    <div class="modal__content">
+                        <div class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
+                            <h2 class="font-medium text-base mr-auto">
+                                New Order
+                            </h2>
+                        </div>
+                        <div class="p-5 grid grid-cols-12 gap-4 row-gap-3">
+                            <div class="col-span-12">
+                                <label>Name</label>
+                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Customer name">
+                            </div>
+                            <div class="col-span-12">
+                                <label>Table</label>
+                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Customer table">
+                            </div>
+                            <div class="col-span-12">
+                                <label>Nama Rombongan / Driver</label>
+                                <select class="select2 w-full border mt-2 flex-1">
+                                    <option value="1">Tampilkan dari yg register hari ini</option>
+                                    <option value="2">Garuda Mas</option>
+                                    <option value="3">SMA Al Azhar</option>
+                                    <option value="4">PT Maju Bersama</option>
+                                    <option value="5">Dinas Pariwisata</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3 text-right border-t border-gray-200">
+                            <button type="button" data-dismiss="modal" class="button w-32 border text-gray-700 mr-1">Cancel</button>
+                            <button type="button" class="button w-32 bg-theme-1 text-white">Create</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: New Order Modal -->
+                <!-- BEGIN: Add Item Modal -->
+                <div class="modal" id="add-item-modal">
+                    <div class="modal__content">
+                        <div class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
+                            <h2 class="font-medium text-base mr-auto">
+                                Nama Item
+                            </h2>
+                        </div>
+                        <div class="p-5 grid grid-cols-12 gap-4 row-gap-3">
+                            <div class="col-span-12">
+                                <label>Quantity</label>
+                                <div class="flex mt-2 flex-1">
+                                    <button type="button" class="button w-12 border bg-gray-200 text-gray-600 mr-1">-</button>
+                                    <input type="text" class="input w-full border text-center" placeholder="Item quantity" value="2">
+                                    <button type="button" class="button w-12 border bg-gray-200 text-gray-600 ml-1">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label>Notes</label>
+                                <textarea class="input w-full border mt-2 flex-1" placeholder="Item notes"></textarea>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3 text-right border-t border-gray-200">
+                            <button type="button" data-dismiss="modal" class="button w-24 border text-gray-700 mr-1">Cancel</button>
+                            <button type="button" class="button w-24 bg-theme-1 text-white">Add Item</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Add Item Modal -->
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tambah Produk</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app">
+                <!-- BEGIN: Mobile Menu -->
+                <div class="mobile-menu md:hidden">
+                    <div class="mobile-menu-bar">
+                        <a href="" class="flex mr-auto">
+                            <img alt="#" class="w-6" src="dist/images/logo.svg">
+                        </a>
+                        <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+                    </div>
+                    <ul class="border-t border-theme-24 py-5 hidden">
+                        <li>
+                            <a href="/pos.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="home"></i> </div>
+                                <div class="menu__title"> Point of Sales </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/produk.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="box"></i> </div>
+                                <div class="menu__title"> Produk </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/penjualan.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="trello"></i> </div>
+                                <div class="menu__title"> Data Penjualan </div>
+                            </a>
+        
+                        </li>
+        
+                        <li>
+                            <a href="/stok-opname.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="edit"></i> </div>
+                                <div class="menu__title"> Stok Opname </div>
+                            </a>
+        
+                        </li>
+        
+                        <li>
+                            <a href="/customer.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="users"></i> </div>
+                                <div class="menu__title"> Customer / Driver </div>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#" class="menu">
+                                <div class="menu__icon"> <i data-feather="toggle-right"></i> </div>
+                                <div class="menu__title"> Log Out </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- END: Mobile Menu -->
+                <div class="flex">
+                    <!-- BEGIN: Side Menu -->
+                    <nav class="side-nav">
+                        <a href="" class="intro-x flex items-center pl-5 pt-4">
+                            <img alt="#" class="w-6" src="dist/images/logo.svg">
+                            <span class="hidden xl:block text-white text-lg ml-3"> RESTO<span class="font-medium"> Kopi Panggang</span> </span>
+                        </a>
+                        <div class="side-nav__devider my-6"></div>
+                        <ul>
+                            <li>
+                                <a href="/pos.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                                    <div class="side-menu__title"> Point of Sales </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/produk.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="box"></i> </div>
+                                    <div class="side-menu__title"> Produk </div>
+                                </a>
+            
+                            </li>
+                            <li>
+                                <a href="/penjualan.html" class="side-menu side-menu--active">
+                                    <div class="side-menu__icon"> <i data-feather="trello"></i> </div>
+                                    <div class="side-menu__title"> Data Penjualan </div>
+                                </a>
+            
+                            </li>
+            
+                            <li>
+                                <a href="/stok-opname.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="edit"></i> </div>
+                                    <div class="side-menu__title"> Stok Opname </div>
+                                </a>
+            
+                            </li>
+            
+                            <li>
+                                <a href="/customer.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                                    <div class="side-menu__title"> Customer </div>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="/driver.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                                    <div class="side-menu__title"> Driver </div>
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="toggle-right"></i> </div>
+                                    <div class="side-menu__title"> Log Out </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <div id="" class="relative flex items-center py-1"> 
+                        <div class="w-12 h-12 image-fit"> <img alt="#" class="rounded-full" src="dist/images/profile-13.jpg"> </div> 
+                            <div class="ml-4 mr-auto"> 
+                                <div class="font-medium leading-relaxed">Nama Operator</div> 
+                                <div class="text-gray-600">Jabatan</div> 
+                            </div> 
+                    </div> 
+                </div>
+                <!-- END: Top Bar -->
+
+                <!-- BEGIN: General Report -->
+                <div class="col-span-12 mt-8">
+                    <div class="intro-y flex items-center h-10">
+                        <h2 class="text-lg font-medium truncate mr-5">
+                            General Report
+                        </h2>
+                        <a href="" class="ml-auto flex text-theme-1"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 mt-5">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="shopping-cart" class="report-box__icon text-theme-10"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">Rp 53.100.000</div>
+                                    <div class="text-base text-gray-600 mt-1">Penjualan Hari Ini</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="credit-card" class="report-box__icon text-theme-11"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">3.521</div>
+                                    <div class="text-base text-gray-600 mt-1">Transaksi Hari Ini</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="monitor" class="report-box__icon text-theme-12"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">5</div>
+                                    <div class="text-base text-gray-600 mt-1">Void Transaksi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="user" class="report-box__icon text-theme-9"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">Rp 152.000</div>
+                                    <div class="text-base text-gray-600 mt-1">Void Transaksi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: General Report -->
+                <!-- BEGIN: Datatable -->
+                <div class="intro-y datatable-wrapper box p-5 mt-5">
+                    <table class="table table-report table-report--bordered display datatable w-full">
+                        <thead>
+                            <tr>
+                                <th class="border-b-2 whitespace-no-wrap">NOMOR TRANSAKSI</th>
+                                <th class="border-b-2 text-center whitespace-no-wrap">CUSTOMER / DRIVER</th>
+                                <th class="border-b-2 text-center whitespace-no-wrap">TOTAL TRANSAKSI</th>
+                                <th class="border-b-2 text-center whitespace-no-wrap">STATUS</th>
+                                <th class="border-b-2 text-center whitespace-no-wrap">TINDAKAN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap"># 10002</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">13-01-2024</div>
+                                </td>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap">Nama Customer</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">Driver</div>
+                                </td>
+                                <td class="text-center border-b">Rp 980.000</td>
+                                <td class="w-40 border-b">
+                                    <div class="flex items-center sm:justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Dibayar </div>
+                                </td>
+                                <td class="border-b w-5">
+                                    <div class="flex sm:justify-center items-center">
+                                        <a class="flex items-center mr-3" href=""> <i data-feather="edit" class="w-4 h-4 mr-1"></i> Void </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap"># 10001</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">13-01-2024</div>
+                                </td>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap">Nama Customer</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">Driver</div>
+                                </td>
+                                <td class="text-center border-b">Rp 1.234.000</td>
+                                <td class="w-40 border-b">
+                                    <div class="flex items-center sm:justify-center text-theme-6"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Belum Dibayar </div>
+                                </td>
+                                <td class="border-b w-5">
+                                    <div class="flex sm:justify-center items-center">
+                                        <a class="flex items-center mr-3" href=""> <i data-feather="edit" class="w-4 h-4 mr-1"></i> Void </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap"># 10002</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">13-01-2024</div>
+                                </td>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap">Nama Customer</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">Driver</div>
+                                </td>
+                                <td class="text-center border-b">Rp 152.000</td>
+                                <td class="w-40 border-b">
+                                    <div class="flex items-center sm:justify-center text-theme-11"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Void </div>
+                                </td>
+                                <td class="border-b w-5">
+                                    <div class="flex sm:justify-center items-center">
+                                        <a class="flex items-center mr-3" href=""> <i data-feather="edit" class="w-4 h-4 mr-1"></i> Void </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <!-- END: Datatable -->
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
